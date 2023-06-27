@@ -8,6 +8,7 @@ import { StringDecoder } from 'string_decoder';
 import { v4 as uuidv4 } from "uuid";
 import { FormAdd } from './FormAdd';
 import './Form.css';
+import { InitialUrl } from './InitialUrl';
 
 export type Data = {
     fristName: string,
@@ -26,7 +27,6 @@ export const Test = () => {
     const [dailog, setDailog] = useState<Data>({fristName: '', lastName: '', age: Number(), id: uuidv4()});
 
 
-    // const onChangeTodo = () => {}
 
     //dialigのon/off
     const onClickDaialog = () => {
@@ -134,22 +134,7 @@ export const Test = () => {
                             open={deletOpen}
                             onClose={onCloseDaialog}
                             >
-                                <FormAdd userList={userList} setUserList={setUserList} setDeletOpen={setDeletOpen}/>
-                            {/* <Box m={5}>
-                                <DialogTitle>削除してやる</DialogTitle>
-                                <DialogContent>
-                                    <DialogContentText>
-                                        <InputLabel>FristName</InputLabel>
-                                        <TextField value={dailog.fristName} onChange={onChangeFristNameDialog}></TextField>
-                                        <InputLabel>LastName</InputLabel>
-                                        <TextField value={dailog.lastName} onChange={onChangeLastNameDialog}></TextField>
-                                        <InputLabel>Age</InputLabel>
-                                        <TextField value={dailog.age} onChange={onChangeAgeDialog}></TextField>
-                                        <Button onClick={onClickAdd}>追加</Button>
-                                        <Button onClick={onClickBackAdd}>戻る</Button>
-                                    </DialogContentText>
-                                </DialogContent>
-                            </Box> */}
+                            <FormAdd userList={userList} setUserList={setUserList} setDeletOpen={setDeletOpen}/>
                         </Dialog>
                     </TableBody>
                 </Table>
