@@ -41,6 +41,9 @@ export const InitialUrl = () => {
                 ))}
                 </TableBody>
                 <button>a</button>
+                <button>b</button>
+                aaaaaaa
+                <p>oooooo</p>
             </Table>
         </TableContainer>
     );  
