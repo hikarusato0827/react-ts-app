@@ -7,6 +7,7 @@ import { UserManagement } from './components/UserManagement'
 import { Test } from './components/Test';
 import { Form } from './components/Form';
 import { FormAdd } from './components/FormAdd';
+import { InitialUrl } from './components/InitialUrl';
 
 
 
@@ -14,9 +15,10 @@ function App() {
   return (
     <div className="App" style={{height: '100vh'}}>
       {/* <UserManagement/> */}
-      <Test />
+      {/* <Test /> */}
       {/* <Form />  */}
       {/* <FormAdd /> */}
+      <InitialUrl />
     </div>
   );
 }
