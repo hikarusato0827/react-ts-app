@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import TableHead from '@mui/material/TableHead';
-import { Box, Paper, Table, TableBody, TableRow, Button } from '@mui/material';
+import { Button, Paper, Table, TableBody, TableRow } from '@mui/material';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 
@@ -22,7 +22,7 @@ export const InitialUrl = () => {
     },[]);
 
     return (
-        <Box>
+        <div>
             <TableContainer component={Paper}>
                 <Table>
                     <TableHead>
@@ -44,6 +44,6 @@ export const InitialUrl = () => {
                 </Table>
             </TableContainer>
             <Button>登録</Button>
-        </Box>
+        </div>
     );  
     } 
