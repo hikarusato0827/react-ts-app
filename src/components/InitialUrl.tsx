@@ -43,7 +43,7 @@ export const InitialUrl = () => {
                     </TableBody>
                 </Table>
             </TableContainer>
-            <Button>編集</Button>
+            <Button>登録</Button>
         </div>
     );  
     } 
